@@ -12,8 +12,8 @@ public class Ex04 {
         String sexo;
         System.out.println("Digite sua idade: ");
         idade = teclado.nextInt();
-        System.out.println("Digite seu sexo[M/F] : ");
-        sexo = teclado.next().toUpperCase();
+        System.out.println("Digite seu sexo[M/F]: ");
+        sexo = teclado.next().toUpperCase().trim();
         System.out.println("Digite a quantidade de anos de contribuição: ");
         anoDeContribuicao = teclado.nextInt();
         if (sexo.equals("M") && idade >= 65) {
