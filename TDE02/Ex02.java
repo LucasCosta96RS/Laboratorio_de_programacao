@@ -12,9 +12,9 @@ public class Ex02 {
         String digitado;
         digitado = JOptionPane.showInputDialog("Digite o valor da transação: ");
         valorTransacao = Double.parseDouble(digitado);
-        digitado = JOptionPane.showInputDialog("Digite o valor venal de refêrencia: ");
+        digitado = JOptionPane.showInputDialog("Digite o valor venal de referência: ");
         valorVenal = Double.parseDouble(digitado);
-        digitado = JOptionPane.showInputDialog("Digite o percentual de Desconto: ");
+        digitado = JOptionPane.showInputDialog("Digite o percentual de desconto: ");
         percentualDesconto = Double.parseDouble(digitado);
         if (valorTransacao > valorVenal) {
             valorImposto = valorTransacao * percentualDesconto / 100;
