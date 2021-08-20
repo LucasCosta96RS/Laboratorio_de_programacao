@@ -9,7 +9,7 @@ public class Ex12 {
         double peso;
         double pesoLua;
         System.out.println("Digite o seu peso:");
-        peso = teclado.nextFloat();
+        peso = teclado.nextDouble();
         pesoLua = peso * 0.17;
         System.out.println("O seu peso na lua é: " + pesoLua);
     }
