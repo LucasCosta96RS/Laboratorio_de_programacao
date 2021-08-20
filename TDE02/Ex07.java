@@ -8,19 +8,16 @@ public class Ex07 {
         String login;
         String senha;
         int contador;
-        int contadorTentativas;
-        contadorTentativas = 3;
-        contador = 0;
-        while (contador < 3) {
+        contador = 3;
+        while (contador > 0) {
             login = JOptionPane.showInputDialog("Digite seu Login");
             senha = JOptionPane.showInputDialog("Digite sua senha");
-            contador += 1;
-            contadorTentativas -= 1;
+            contador -= 1;
             if (login.equals("java8") && senha.equals("java8")) {
                 JOptionPane.showMessageDialog(null, "Login e senha corretos.");
-                contador += 3;
-            } else if (!login.equals("java8") && !senha.equals("java8") && contadorTentativas != 0) {
-                JOptionPane.showMessageDialog(null, "Tente novamente, você ainda tem " + contadorTentativas + " tentativas.");
+                contador -= 3;
+            } else if (!login.equals("java8") && !senha.equals("java8") && contador != 0) {
+                JOptionPane.showMessageDialog(null, "Tente novamente, você ainda tem " + contador + " tentativas.");
             }
         }
     }
