@@ -5,7 +5,9 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-/** Lê os inputs do teclado e retorna uma informação, usar Teclado.entrada = false se quiser utilizar JOptionPane no lugar de Scanner */
+/**
+ * Lê os inputs do teclado e retorna uma informação, usar Teclado.entrada = false, se quiser utilizar JOptionPane no lugar de Scanner
+ * */
 public class Teclado {
 
 
