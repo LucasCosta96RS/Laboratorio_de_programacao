@@ -26,9 +26,9 @@ public class Teclado {
     public String lerString() {
         if (entrada) {
             System.out.println("Digite uma frase: ");
-            return tc.nextLine().trim();
+            return tc.nextLine();
         } else {
-            return Objects.requireNonNullElse(JOptionPane.showInputDialog("Digite uma frase: ").trim(), "0");
+            return Objects.requireNonNullElse(JOptionPane.showInputDialog("Digite uma frase: "), "0");
         }
     }
 
@@ -40,9 +40,9 @@ public class Teclado {
     public String lerString(String msg) {
         if (entrada) {
             System.out.println(msg);
-            return tc.nextLine().trim();
+            return tc.nextLine();
         } else {
-            return Objects.requireNonNullElse(JOptionPane.showInputDialog(msg).trim(), "0");
+            return Objects.requireNonNullElse(JOptionPane.showInputDialog(msg), "0");
         }
     }
 
@@ -333,7 +333,7 @@ public class Teclado {
      * */
     public String lerTelefone() {
         if (entrada) {
-            System.out.println("Digite seu Telefone no padrão DDD-XXXXXXXXX: ");
+            System.out.println("Digite seu Telefone no padrão XX-XXXXXXXXX: ");
             String telefone = tc.next();
             tc.nextLine();
             if (padrao_de_telefone.matcher(telefone).matches()) {
@@ -343,7 +343,7 @@ public class Teclado {
             }
         } else {
             try {
-                String telefone = JOptionPane.showInputDialog("Digite seu Telefone no padrão DDD-XXXXXXXXX: ").trim();
+                String telefone = JOptionPane.showInputDialog("Digite seu Telefone no padrão XX-XXXXXXXXX: ").trim();
                 if (padrao_de_telefone.matcher(telefone).matches()) {
                     return telefone;
                 } else {
