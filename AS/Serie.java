@@ -36,6 +36,10 @@ public class Serie {
         JOptionPane.showMessageDialog(null, "Título: " + this.titulo + "\n" + "Sinopse: " +this.sinopse + "\n" + "Temporadas: " +this.temporadas + "\n" + "Episódios: " + this.episodios);
     }
 
+    public String exibirNome(){
+        return this.titulo;
+    }
+
     public Serie() {
     }
 

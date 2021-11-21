@@ -51,6 +51,8 @@ public class Programa {
                         for (Serie serie : series) {
                             if (serie.visto) {
                                 serie.exibirDados();
+                            } else {
+                                JOptionPane.showMessageDialog(null, serie.exibirNome() + " ainda não foi vista");
                             }
                         }
                     }
