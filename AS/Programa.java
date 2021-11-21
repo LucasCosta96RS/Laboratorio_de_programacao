@@ -52,7 +52,7 @@ public class Programa {
                             if (serie.visto) {
                                 serie.exibirDados();
                             } else {
-                                JOptionPane.showMessageDialog(null, serie.exibirNome() + " ainda não foi vista");
+                                JOptionPane.showMessageDialog(null, serie.exibirNome() + " ainda não foi visto");
                             }
                         }
                     }
